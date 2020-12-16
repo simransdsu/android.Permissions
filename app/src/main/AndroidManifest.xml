@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.simran.permissions">
 
+    <!--
+    INTERNET PERMISSIONS ARE LESS SENSITIVE PERMISSIONS SO USER WONT BE ASKED TO APPROVE IT.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--
+     THESE ARE SENSITIVE PERMISSIONS, SO USER WILL BE ASKED TO APPROVE IT FROM YOUR ACTIVITY OF FRAGMENT
+     -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
